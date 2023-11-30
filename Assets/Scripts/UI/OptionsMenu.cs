@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Button = UnityEngine.UIElements.Button;
 
 public class OptionsMenu : MonoBehaviour
 {
@@ -26,6 +28,12 @@ public class OptionsMenu : MonoBehaviour
         rootElement.Q<Button>("BackButton").RegisterCallback<ClickEvent, string>(OnBackButtonClicked, "CloseOptions");
         advancedOptionsContainer = rootElement.Q<VisualElement>("AdvancedOptionsContainer");
         advancedOptionsElement = generalElement.CloneTree();
+        var languageDropdown = advancedOptionsElement.Q<DropdownField>("LanguageDropdownField");
+        languageDropdown.choices = new List<string>() {"English", "Français"};
+        languageDropdown.RegisterValueChangedCallback(callback =>
+        {
+            languageDropdown.value = callback.newValue;
+        });
         advancedOptionsContainer.Add(advancedOptionsElement);
     }
 
@@ -33,6 +41,17 @@ public class OptionsMenu : MonoBehaviour
     {
         advancedOptionsContainer.Remove(advancedOptionsElement);
         advancedOptionsElement = audioElement.CloneTree();
+        var musicSlider = advancedOptionsElement.Q<SliderInt>("MusicSliderInt");
+        musicSlider.RegisterValueChangedCallback(callback =>
+        {
+            AudioListener.volume = callback.newValue / 100f;
+        });
+        var sfxSlider = advancedOptionsElement.Q<SliderInt>("SFXSliderInt");
+        sfxSlider.RegisterValueChangedCallback(callback =>
+        {
+            // TODO : Change SFX volume
+            // AudioListener.volume = callback.newValue / 100f;
+        });
         advancedOptionsContainer.Add(advancedOptionsElement);
     }
 
@@ -40,6 +59,12 @@ public class OptionsMenu : MonoBehaviour
     {
         advancedOptionsContainer.Remove(advancedOptionsElement);
         advancedOptionsElement = generalElement.CloneTree();
+        var languageDropdown = advancedOptionsElement.Q<DropdownField>("LanguageDropdownField");
+        languageDropdown.choices = new List<string>() {"English", "Français"};
+        languageDropdown.RegisterValueChangedCallback(callback =>
+        {
+            languageDropdown.value = callback.newValue;
+        });
         advancedOptionsContainer.Add(advancedOptionsElement);
     }
 
@@ -47,6 +72,28 @@ public class OptionsMenu : MonoBehaviour
     {
         advancedOptionsContainer.Remove(advancedOptionsElement);
         advancedOptionsElement = graphicsElement.CloneTree();
+        var windowModeDropdown = advancedOptionsElement.Q<DropdownField>("WindowDropdownField");
+        windowModeDropdown.choices = new List<string>() {"Windowed", "Fullscreen"};
+        windowModeDropdown.RegisterValueChangedCallback(callback =>
+        {
+            windowModeDropdown.value = callback.newValue;
+            // Set the screen mode
+            Screen.fullScreenMode = callback.newValue == "Windowed"
+                ? FullScreenMode.Windowed
+                : FullScreenMode.FullScreenWindow;
+        });
+        var resolutionDropdown = advancedOptionsElement.Q<DropdownField>("ResolutionDropdownField");
+        resolutionDropdown.choices = new List<string>() {"1920x1080", "1280x720"};
+        resolutionDropdown.RegisterValueChangedCallback(callback =>
+        {
+            resolutionDropdown.value = callback.newValue;
+            // Parse the resolution from the dropdown value
+            string[] resolution = callback.newValue.Split('x');
+            int width = int.Parse(resolution[0]);
+            int height = int.Parse(resolution[1]);
+            // Set the screen resolution
+            Screen.SetResolution(width, height, Screen.fullScreen);
+        });
         advancedOptionsContainer.Add(advancedOptionsElement);
     }
 

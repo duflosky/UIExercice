@@ -1,14 +1,14 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/USS/Menu.uss?fileID=7433441132597879392&amp;guid=e32b7562d5e01ce4cb733a8f0f21cf35&amp;type=3#Menu" />
-    <ui:VisualElement name="OptionsElement" class="window" style="width: auto; height: auto; max-height: none; align-items: center; top: 12.5%; justify-content: flex-start; max-width: none; min-width: auto; min-height: auto;">
+    <ui:VisualElement name="OptionsElement" class="window" style="align-items: center;">
         <ui:Label tabindex="-1" text="Options" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OptionsLabel" class="title" />
-        <ui:VisualElement name="OptionsContainer" style="flex-grow: 1; flex-direction: row; justify-content: space-around; align-self: stretch; align-items: center; max-height: none;">
+        <ui:VisualElement name="OptionsContainer" style="flex-direction: row;">
             <ui:Button text="General" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GeneralButton" class="menuButton" />
             <ui:Button text="Graphics" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GraphicsButton" class="menuButton" />
             <ui:Button text="Audio" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AudioButton" class="menuButton" />
             <ui:Button text="Controls" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ControlsButton" class="menuButton" />
         </ui:VisualElement>
-        <ui:VisualElement name="AdvancedOptionsContainer" style="align-items: auto;" />
-        <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BackButton" class="menuButton" style="max-height: none;" />
+        <ui:VisualElement name="AdvancedOptionsContainer" style="flex-grow: 1; align-self: stretch;" />
+        <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BackButton" class="menuButton" />
     </ui:VisualElement>
 </ui:UXML>
