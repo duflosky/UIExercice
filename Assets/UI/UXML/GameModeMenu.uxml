@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/USS/Menu.uss?fileID=7433441132597879392&amp;guid=e32b7562d5e01ce4cb733a8f0f21cf35&amp;type=3#Menu" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Arts/Free-City-Backgrounds-Pixel-Art6.png?fileID=2800000&amp;guid=87f618d6f5fd8184f97be072bffadfa0&amp;type=3#Free-City-Backgrounds-Pixel-Art6&apos;); position: absolute; width: 100%; height: 100%;" />
     <ui:VisualElement name="GameModeContainer" style="flex-grow: 1;">
         <ui:VisualElement name="ModesContainer" style="flex-direction: row; flex-grow: 1; padding-top: 100px; padding-right: 100px; padding-bottom: 100px; padding-left: 100px;">
             <ui:VisualElement name="EndlessModeContainer" style="flex-grow: 1; margin-right: 10px; margin-left: 10px;">

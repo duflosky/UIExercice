@@ -49,3 +49,11 @@
     -unity-font: url('project://database/Assets/Arts/Fonts/kenvector_future.ttf?fileID=12800000&guid=c7c77b82c35048a408906d60ad82c228&type=3#kenvector_future');
     -unity-font-definition: url('project://database/Assets/Arts/Fonts/kenvector_future%20SDF.asset?fileID=11400000&guid=03e56dd485b551a478059d390994354d&type=2#kenvector_future SDF');
 }
+
+.menuButton:hover {
+    background-image: url('project://database/Assets/Arts/Sprites/blue_button02.png?fileID=2800000&guid=18a145bd830caca459b252ce58a73cfd&type=3#blue_button02');
+}
+
+.menuButton:focus {
+    background-image: url('project://database/Assets/Arts/Sprites/blue_button01.png?fileID=2800000&guid=75c5e799e06c7b34d803ce7d939972bc&type=3#blue_button01');
+}

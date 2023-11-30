@@ -30,6 +30,7 @@ public class OptionsMenu : MonoBehaviour
         advancedOptionsElement = generalElement.CloneTree();
         var languageDropdown = advancedOptionsElement.Q<DropdownField>("LanguageDropdownField");
         languageDropdown.choices = new List<string>() {"English", "Français"};
+        languageDropdown.value = "English";
         languageDropdown.RegisterValueChangedCallback(callback =>
         {
             languageDropdown.value = callback.newValue;
@@ -61,6 +62,7 @@ public class OptionsMenu : MonoBehaviour
         advancedOptionsElement = generalElement.CloneTree();
         var languageDropdown = advancedOptionsElement.Q<DropdownField>("LanguageDropdownField");
         languageDropdown.choices = new List<string>() {"English", "Français"};
+        languageDropdown.value = "English";
         languageDropdown.RegisterValueChangedCallback(callback =>
         {
             languageDropdown.value = callback.newValue;
@@ -74,6 +76,9 @@ public class OptionsMenu : MonoBehaviour
         advancedOptionsElement = graphicsElement.CloneTree();
         var windowModeDropdown = advancedOptionsElement.Q<DropdownField>("WindowDropdownField");
         windowModeDropdown.choices = new List<string>() {"Windowed", "Fullscreen"};
+        windowModeDropdown.value = Screen.fullScreenMode == FullScreenMode.Windowed
+            ? "Windowed"
+            : "Fullscreen";
         windowModeDropdown.RegisterValueChangedCallback(callback =>
         {
             windowModeDropdown.value = callback.newValue;
@@ -84,6 +89,7 @@ public class OptionsMenu : MonoBehaviour
         });
         var resolutionDropdown = advancedOptionsElement.Q<DropdownField>("ResolutionDropdownField");
         resolutionDropdown.choices = new List<string>() {"1920x1080", "1280x720"};
+        resolutionDropdown.value = Screen.currentResolution.width + "x" + Screen.currentResolution.height;
         resolutionDropdown.RegisterValueChangedCallback(callback =>
         {
             resolutionDropdown.value = callback.newValue;
