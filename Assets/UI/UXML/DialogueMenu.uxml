@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/Menu.uss?fileID=7433441132597879392&amp;guid=e32b7562d5e01ce4cb733a8f0f21cf35&amp;type=3#Menu" />
+    <ui:VisualElement name="DialogueContainer" style="flex-grow: 1; align-self: auto; align-items: center; flex-direction: column-reverse;">
+        <ui:VisualElement name="Dialogue" style="flex-grow: 1; flex-direction: row; width: auto; height: auto; max-height: 25%;">
+            <ui:VisualElement name="Picture" class="windowDialogue" style="width: 15%;" />
+            <ui:VisualElement name="TextContainer" class="windowDialogue" style="flex-grow: 1; min-width: auto; min-height: auto;">
+                <ui:Label tabindex="-1" text="Maurice" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NameText" class="textDialogue" style="flex-grow: 0;" />
+                <ui:Label tabindex="-1" text="Bonjour, je suis Maurice !" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DialogueText" class="textDialogue" style="flex-grow: 1; flex-shrink: 1; flex-wrap: wrap;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

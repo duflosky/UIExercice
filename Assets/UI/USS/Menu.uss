@@ -57,3 +57,30 @@
 .menuButton:focus {
     background-image: url('project://database/Assets/Arts/Sprites/blue_button01.png?fileID=2800000&guid=75c5e799e06c7b34d803ce7d939972bc&type=3#blue_button01');
 }
+
+.windowDialogue {
+    background-color: rgba(55, 55, 55, 0.46);
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.textDialogue {
+    -unity-font: url('project://database/Assets/Arts/Fonts/kenvector_future.ttf?fileID=12800000&guid=c7c77b82c35048a408906d60ad82c228&type=3#kenvector_future');
+    -unity-font-definition: url('project://database/Assets/Arts/Fonts/kenvector_future%20SDF.asset?fileID=11400000&guid=03e56dd485b551a478059d390994354d&type=2#kenvector_future SDF');
+    font-size: 32px;
+    margin-left: 10px;
+}

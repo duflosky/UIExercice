@@ -2,6 +2,5 @@
     <Style src="project://database/Assets/UI/USS/Menu.uss?fileID=7433441132597879392&amp;guid=e32b7562d5e01ce4cb733a8f0f21cf35&amp;type=3#Menu" />
     <ui:VisualElement name="AudioContainer">
         <ui:SliderInt picking-mode="Ignore" label="Music" value="42" high-value="100" name="MusicSliderInt" class="options" />
-        <ui:SliderInt picking-mode="Ignore" label="SFX" value="42" high-value="100" name="SFXSliderInt" class="options" />
     </ui:VisualElement>
 </ui:UXML>
