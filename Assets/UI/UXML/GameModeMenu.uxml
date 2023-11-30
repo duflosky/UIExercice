@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/Menu.uss?fileID=7433441132597879392&amp;guid=e32b7562d5e01ce4cb733a8f0f21cf35&amp;type=3#Menu" />
+    <ui:VisualElement name="GameModeContainer" style="flex-grow: 1;">
+        <ui:VisualElement name="ModesContainer" style="flex-direction: row; flex-grow: 1; padding-top: 100px; padding-right: 100px; padding-bottom: 100px; padding-left: 100px;">
+            <ui:VisualElement name="EndlessModeContainer" style="flex-grow: 1; margin-right: 10px; margin-left: 10px;">
+                <ui:VisualElement name="ImageEndless" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=4154780841294389669&amp;guid=b5d56f62e7fd59044a7afd3742b0f614&amp;type=3#arrow-down&apos;);" />
+                <ui:Button text="Endless" parse-escape-sequences="true" display-tooltip-when-elided="true" name="EndlessButton" class="menuButton" />
+            </ui:VisualElement>
+            <ui:VisualElement name="SoloModeContainer" style="flex-grow: 1; margin-right: 10px; margin-left: 10px;">
+                <ui:VisualElement name="ImageSolo" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=4154780841294389669&amp;guid=b5d56f62e7fd59044a7afd3742b0f614&amp;type=3#arrow-down&apos;);" />
+                <ui:Button text="Solo" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SoloButton" class="menuButton" />
+            </ui:VisualElement>
+            <ui:VisualElement name="MultiplayerModeContainer" style="flex-grow: 1; flex-direction: column; margin-right: 10px; margin-left: 10px;">
+                <ui:VisualElement name="ImageMultiplayer" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=4154780841294389669&amp;guid=b5d56f62e7fd59044a7afd3742b0f614&amp;type=3#arrow-down&apos;);" />
+                <ui:Button text="Multiplayer" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MultiplayerButton" class="menuButton" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BackContainer">
+            <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BackButton" class="menuButton" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
