@@ -43,15 +43,10 @@ public class OptionsMenu : MonoBehaviour
         advancedOptionsContainer.Remove(advancedOptionsElement);
         advancedOptionsElement = audioElement.CloneTree();
         var musicSlider = advancedOptionsElement.Q<SliderInt>("MusicSliderInt");
+        musicSlider.value = (int) (AudioListener.volume * 100f);
         musicSlider.RegisterValueChangedCallback(callback =>
         {
             AudioListener.volume = callback.newValue / 100f;
-        });
-        var sfxSlider = advancedOptionsElement.Q<SliderInt>("SFXSliderInt");
-        sfxSlider.RegisterValueChangedCallback(callback =>
-        {
-            // TODO : Change SFX volume
-            // AudioListener.volume = callback.newValue / 100f;
         });
         advancedOptionsContainer.Add(advancedOptionsElement);
     }
@@ -79,26 +74,29 @@ public class OptionsMenu : MonoBehaviour
         windowModeDropdown.value = Screen.fullScreenMode == FullScreenMode.Windowed
             ? "Windowed"
             : "Fullscreen";
+        UnityEditor.PlayerSettings.fullScreenMode = Screen.fullScreenMode;
         windowModeDropdown.RegisterValueChangedCallback(callback =>
         {
             windowModeDropdown.value = callback.newValue;
-            // Set the screen mode
             Screen.fullScreenMode = callback.newValue == "Windowed"
                 ? FullScreenMode.Windowed
                 : FullScreenMode.FullScreenWindow;
+            UnityEditor.PlayerSettings.fullScreenMode = Screen.fullScreenMode;
         });
         var resolutionDropdown = advancedOptionsElement.Q<DropdownField>("ResolutionDropdownField");
         resolutionDropdown.choices = new List<string>() {"1920x1080", "1280x720"};
         resolutionDropdown.value = Screen.currentResolution.width + "x" + Screen.currentResolution.height;
+        UnityEditor.PlayerSettings.defaultScreenWidth = Screen.currentResolution.width;
+        UnityEditor.PlayerSettings.defaultScreenHeight = Screen.currentResolution.height;
         resolutionDropdown.RegisterValueChangedCallback(callback =>
         {
             resolutionDropdown.value = callback.newValue;
-            // Parse the resolution from the dropdown value
             string[] resolution = callback.newValue.Split('x');
             int width = int.Parse(resolution[0]);
             int height = int.Parse(resolution[1]);
-            // Set the screen resolution
             Screen.SetResolution(width, height, Screen.fullScreen);
+            UnityEditor.PlayerSettings.defaultScreenWidth = width;
+            UnityEditor.PlayerSettings.defaultScreenHeight = height;
         });
         advancedOptionsContainer.Add(advancedOptionsElement);
     }

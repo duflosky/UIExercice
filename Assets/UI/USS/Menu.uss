@@ -84,3 +84,25 @@
     font-size: 32px;
     margin-left: 10px;
 }
+
+#unity-dragger {
+    background-image: url('project://database/Assets/Arts/Sprites/blue_sliderUp.png?fileID=2800000&guid=fd9c833760f970c40b488d3d1f47cf11&type=3#blue_sliderUp');
+    width: 36px;
+    height: 36px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#unity-tracker {
+    background-image: url('project://database/Assets/Arts/Sprites/grey_sliderHorizontal.png?fileID=2800000&guid=641e49f26248ee5429af6e7cc86a019d&type=3#grey_sliderHorizontal');
+    background-color: rgba(0, 0, 0, 0);
+    width: auto;
+}
