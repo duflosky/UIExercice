@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: MenuTable_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 80f6d9fb5d7514545a4fd86925ccd0b7, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 54507028480
+    m_Localized: Jouer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 512508248064
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 579772301312
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 718326939648
+    m_Localized: Retour
+    m_Metadata:
+      m_Items: []
+  - m_Id: 825294274560
+    m_Localized: Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 879786672128
+    m_Localized: Graphiques
+    m_Metadata:
+      m_Items: []
+  - m_Id: 933582815232
+    m_Localized: Son
+    m_Metadata:
+      m_Items: []
+  - m_Id: 985827065856
+    m_Localized: Touches
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1093666816000
+    m_Localized: Sans Fin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1165183893504
+    m_Localized: Seul
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1238592602112
+    m_Localized: Multijoueur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5098287611904
+    m_Localized: Appliquer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5250737979392
+    m_Localized: Langage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5394220924928
+    m_Localized: Theme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5541155782656
+    m_Localized: "Fen\xEAtre"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5664262799360
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5830059442176
+    m_Localized: Musique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12711381385216
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15179670568960
+    m_Localized: Continuer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15229352099840
+    m_Localized: Retourner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13309757571072
+    m_Localized: Suivant
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     sprite: {fileID: 1517081223, guid: e8bbd847859f1d14bb72c28ce42a0548, type: 3}
-    title: First
+    titleFrench: Premier
+    titleEnglish: First
     name: Gobelin
-    text: Vous allez mourir !
+    textFrench: Vous allez mourir !
+    textEnglish: You're gonna die !
     choices:
     - {fileID: 11400000, guid: bcd1a5daaebd97c40b0724cc16631a48, type: 2}
     - {fileID: 11400000, guid: c031114e2180daf4ea5fa3de65ac21f7, type: 2}

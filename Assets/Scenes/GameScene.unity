@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 825324660}
   - component: {fileID: 825324659}
   - component: {fileID: 825324661}
+  - component: {fileID: 825324662}
   m_Layer: 0
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -403,7 +404,7 @@ MonoBehaviour:
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: 045df4bbf811b2c47bd822a52999e012,
     type: 3}
-  m_SortingOrder: 0
+  m_SortingOrder: 1
 --- !u!4 &825324660
 Transform:
   m_ObjectHideFlags: 0
@@ -433,6 +434,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseUIDocument: {fileID: 825324659}
   optionsMenu: {fileID: 1407269089}
+--- !u!114 &825324662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825324658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1c1fc5bca52e44ab67bf2668f18623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table:
+    m_TableReference:
+      m_TableCollectionName: GUID:80f6d9fb5d7514545a4fd86925ccd0b7
 --- !u!1 &1184780495
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +597,7 @@ GameObject:
   - component: {fileID: 1407269091}
   - component: {fileID: 1407269090}
   - component: {fileID: 1407269089}
+  - component: {fileID: 1407269092}
   m_Layer: 0
   m_Name: OptionsMenu
   m_TagString: Untagged
@@ -601,13 +618,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionsUIDocument: {fileID: 1407269090}
-  audioElement: {fileID: 9197481963319205126, guid: 2039e689a188d7549b017e632d95596a,
+  panelSettings: {fileID: 11400000, guid: ff442f9780b5f6047b15ba0d05335845, type: 2}
+  defaultThemeStyleSheet: {fileID: -4733365628477956816, guid: 07867927529be744cb3e7370ea47995c,
     type: 3}
-  generalElement: {fileID: 9197481963319205126, guid: e02fd5e5b05e00b41b59a7533a8aef74,
-    type: 3}
-  graphicsElement: {fileID: 9197481963319205126, guid: 64b313514002f074cb767154dfb6d7f5,
-    type: 3}
-  controlsElement: {fileID: 9197481963319205126, guid: 9675467cf7734f84dbc601b69fa81195,
+  yellowThemeStyleSheet: {fileID: -4733365628477956816, guid: 06389d576cfdc494498d0d49e00f2bb3,
     type: 3}
 --- !u!114 &1407269090
 MonoBehaviour:
@@ -625,7 +639,7 @@ MonoBehaviour:
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: db82dd4f395cc244ab8755a2e5371b6a,
     type: 3}
-  m_SortingOrder: 0
+  m_SortingOrder: 2
 --- !u!4 &1407269091
 Transform:
   m_ObjectHideFlags: 0
@@ -641,6 +655,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1407269092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407269088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1c1fc5bca52e44ab67bf2668f18623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table:
+    m_TableReference:
+      m_TableCollectionName: GUID:80f6d9fb5d7514545a4fd86925ccd0b7
 --- !u!1 &1625906408
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +681,7 @@ GameObject:
   - component: {fileID: 1625906410}
   - component: {fileID: 1625906409}
   - component: {fileID: 1625906411}
+  - component: {fileID: 1625906412}
   m_Layer: 0
   m_Name: DialogueMenu
   m_TagString: Untagged
@@ -705,6 +735,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueUIDocument: {fileID: 1625906409}
   dialogueSO: {fileID: 11400000, guid: 53a3b812f694c0d4194d58f106c088b8, type: 2}
+--- !u!114 &1625906412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625906408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1c1fc5bca52e44ab67bf2668f18623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table:
+    m_TableReference:
+      m_TableCollectionName: GUID:80f6d9fb5d7514545a4fd86925ccd0b7
 --- !u!1 &1977319239
 GameObject:
   m_ObjectHideFlags: 0

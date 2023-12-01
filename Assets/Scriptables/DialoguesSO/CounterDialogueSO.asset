@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     sprite: {fileID: 1517081223, guid: e8bbd847859f1d14bb72c28ce42a0548, type: 3}
-    title: Attack
+    titleFrench: Contre
+    titleEnglish: Counter
     name: Gobelin
-    text: "Tu ne fais pas le poids face \xE0 moi ! "
+    textFrench: "Tu ne fais pas le poids face \xE0 moi ! "
+    textEnglish: You can't fight me !
     choices: []

@@ -389,6 +389,7 @@ GameObject:
   - component: {fileID: 617977568}
   - component: {fileID: 617977570}
   - component: {fileID: 617977569}
+  - component: {fileID: 617977571}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -443,6 +444,21 @@ MonoBehaviour:
   sourceAsset: {fileID: 9197481963319205126, guid: 30a57fd1b9894e1478b80b5a3261afdf,
     type: 3}
   m_SortingOrder: 0
+--- !u!114 &617977571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617977566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1c1fc5bca52e44ab67bf2668f18623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table:
+    m_TableReference:
+      m_TableCollectionName: GUID:80f6d9fb5d7514545a4fd86925ccd0b7
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +647,7 @@ GameObject:
   - component: {fileID: 1865178406}
   - component: {fileID: 1865178405}
   - component: {fileID: 1865178404}
+  - component: {fileID: 1865178407}
   m_Layer: 0
   m_Name: ModeMenu
   m_TagString: Untagged
@@ -684,6 +701,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1865178407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865178403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1c1fc5bca52e44ab67bf2668f18623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table:
+    m_TableReference:
+      m_TableCollectionName: GUID:80f6d9fb5d7514545a4fd86925ccd0b7
 --- !u!1 &1911898700
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,6 +727,7 @@ GameObject:
   - component: {fileID: 1911898702}
   - component: {fileID: 1911898701}
   - component: {fileID: 1911898703}
+  - component: {fileID: 1911898704}
   m_Layer: 0
   m_Name: OptionsMenu
   m_TagString: Untagged
@@ -747,6 +780,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionsUIDocument: {fileID: 1911898701}
+  panelSettings: {fileID: 11400000, guid: ff442f9780b5f6047b15ba0d05335845, type: 2}
+  defaultThemeStyleSheet: {fileID: -4733365628477956816, guid: 07867927529be744cb3e7370ea47995c,
+    type: 3}
+  yellowThemeStyleSheet: {fileID: -4733365628477956816, guid: 06389d576cfdc494498d0d49e00f2bb3,
+    type: 3}
   audioElement: {fileID: 9197481963319205126, guid: 2039e689a188d7549b017e632d95596a,
     type: 3}
   generalElement: {fileID: 9197481963319205126, guid: e02fd5e5b05e00b41b59a7533a8aef74,
@@ -755,6 +793,21 @@ MonoBehaviour:
     type: 3}
   controlsElement: {fileID: 9197481963319205126, guid: 9675467cf7734f84dbc601b69fa81195,
     type: 3}
+--- !u!114 &1911898704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911898700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa1c1fc5bca52e44ab67bf2668f18623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table:
+    m_TableReference:
+      m_TableCollectionName: GUID:80f6d9fb5d7514545a4fd86925ccd0b7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

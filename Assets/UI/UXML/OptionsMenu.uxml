@@ -1,14 +1,22 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/USS/Menu.uss?fileID=7433441132597879392&amp;guid=e32b7562d5e01ce4cb733a8f0f21cf35&amp;type=3#Menu" />
+    <ui:Template name="AudioMenu" src="project://database/Assets/UI/UXML/AudioMenu.uxml?fileID=9197481963319205126&amp;guid=2039e689a188d7549b017e632d95596a&amp;type=3#AudioMenu" />
+    <ui:Template name="ControlsMenu" src="project://database/Assets/UI/UXML/ControlsMenu.uxml?fileID=9197481963319205126&amp;guid=9675467cf7734f84dbc601b69fa81195&amp;type=3#ControlsMenu" />
+    <ui:Template name="GeneralMenu" src="project://database/Assets/UI/UXML/GeneralMenu.uxml?fileID=9197481963319205126&amp;guid=e02fd5e5b05e00b41b59a7533a8aef74&amp;type=3#GeneralMenu" />
+    <ui:Template name="GraphicsMenu" src="project://database/Assets/UI/UXML/GraphicsMenu.uxml?fileID=9197481963319205126&amp;guid=64b313514002f074cb767154dfb6d7f5&amp;type=3#GraphicsMenu" />
     <ui:VisualElement name="OptionsElement" class="window" style="align-items: center;">
-        <ui:Label tabindex="-1" text="Options" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OptionsLabel" class="title" />
-        <ui:VisualElement name="OptionsContainer" style="flex-direction: row;">
-            <ui:Button text="General" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GeneralButton" class="menuButton" />
-            <ui:Button text="Graphics" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GraphicsButton" class="menuButton" />
-            <ui:Button text="Audio" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AudioButton" class="menuButton" />
-            <ui:Button text="Controls" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ControlsButton" class="menuButton" />
+        <ui:Label tabindex="-1" text="#settingsTitle" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OptionsLabel" class="title" />
+        <ui:VisualElement name="OptionsContainer" style="flex-direction: row; flex-grow: 0; flex-shrink: 1; justify-content: center; align-self: stretch;">
+            <ui:Button text="#generalButton" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GeneralButton" class="menuButton" />
+            <ui:Button text="#graphicsButton" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GraphicsButton" class="menuButton" />
+            <ui:Button text="#audioButton" parse-escape-sequences="true" display-tooltip-when-elided="true" name="AudioButton" class="menuButton" />
+            <ui:Button text="#controlsButton" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ControlsButton" class="menuButton" />
         </ui:VisualElement>
-        <ui:VisualElement name="AdvancedOptionsContainer" style="flex-grow: 1; align-self: stretch;" />
-        <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BackButton" class="menuButton" />
+        <ui:VisualElement name="AdvancedOptionsContainer" style="flex-grow: 1; align-self: stretch;">
+            <ui:Instance template="AudioMenu" name="AudioMenu" style="display: none;" />
+            <ui:Instance template="ControlsMenu" name="ControlsMenu" style="display: none;" />
+            <ui:Instance template="GeneralMenu" name="GeneralMenu" style="display: none;" />
+            <ui:Instance template="GraphicsMenu" name="GraphicsMenu" style="display: none;" />
+        </ui:VisualElement>
+        <ui:Button text="#backButton" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BackButton" class="menuButton" />
     </ui:VisualElement>
 </ui:UXML>

@@ -8,15 +8,18 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private OptionsMenu optionsMenu;
 
     private VisualElement rootElement;
-    
+
     private void OnEnable()
     {
         rootElement = pauseUIDocument.rootVisualElement;
         rootElement.Q<Button>("ResumeButton").RegisterCallback<ClickEvent, string>(OnResumeButtonClicked, "ResumeGame");
-        rootElement.Q<Button>("OptionsButton").RegisterCallback<ClickEvent, string>(OnOptionsButtonClicked, "OpenOptions");
+        rootElement.Q<Button>("OptionsButton")
+            .RegisterCallback<ClickEvent, string>(OnOptionsButtonClicked, "OpenOptions");
         rootElement.Q<Button>("MenuButton").RegisterCallback<ClickEvent, string>(OnMenuButtonClicked, "OpenMenu");
         rootElement.Q<Button>("QuitButton").RegisterCallback<ClickEvent, string>(OnQuitButtonClicked, "QuitGame");
     }
+
+    #region Event Callbacks
 
     private void OnResumeButtonClicked(ClickEvent evt, string userargs)
     {
@@ -27,12 +30,12 @@ public class PauseMenu : MonoBehaviour
     {
         optionsMenu.gameObject.SetActive(true);
     }
-    
+
     private void OnMenuButtonClicked(ClickEvent evt, string userargs)
     {
         SceneManager.LoadScene(0);
     }
-    
+
     private void OnQuitButtonClicked(ClickEvent evt, string userargs)
     {
         Application.Quit();
@@ -40,4 +43,6 @@ public class PauseMenu : MonoBehaviour
             UnityEditor.EditorApplication.isPlaying = false;
         #endif
     }
+
+    #endregion
 }

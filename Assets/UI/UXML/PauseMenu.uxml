@@ -1,9 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/USS/Menu.uss?fileID=7433441132597879392&amp;guid=e32b7562d5e01ce4cb733a8f0f21cf35&amp;type=3#Menu" />
     <ui:VisualElement name="PauseContainer" style="flex-grow: 1; justify-content: center; width: auto; align-self: center; align-items: auto; max-width: 50%; max-height: 25%; top: 35%;">
-        <ui:Button text="Resume" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ResumeButton" class="mainMenuButton menuButton" />
-        <ui:Button text="Options" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OptionsButton" class="mainMenuButton menuButton" />
-        <ui:Button text="Return to menu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MenuButton" class="mainMenuButton menuButton" />
-        <ui:Button text="Quit to desktop" parse-escape-sequences="true" display-tooltip-when-elided="true" name="QuitButton" class="mainMenuButton menuButton" />
+        <ui:Button text="#resumeButton" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ResumeButton" class="mainMenuButton menuButton" />
+        <ui:Button text="#settingsButton" parse-escape-sequences="true" display-tooltip-when-elided="true" name="OptionsButton" class="mainMenuButton menuButton" />
+        <ui:Button text="#returnButton" parse-escape-sequences="true" display-tooltip-when-elided="true" name="MenuButton" class="mainMenuButton menuButton" />
+        <ui:Button text="#quitButton" parse-escape-sequences="true" display-tooltip-when-elided="true" name="QuitButton" class="mainMenuButton menuButton" />
     </ui:VisualElement>
 </ui:UXML>

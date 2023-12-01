@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     sprite: {fileID: -1137865354, guid: e8bbd847859f1d14bb72c28ce42a0548, type: 3}
-    title: Tuez-le
+    titleFrench: Tuez-le
+    titleEnglish: Kill him
     name: Moi
-    text: "Je vais te d\xE9truire !"
+    textFrench: "Je vais te d\xE9truire !"
+    textEnglish: I will destroy you !
     choices:
     - {fileID: 11400000, guid: 5ceb9b2380062e247815bfcd2f225bac, type: 2}

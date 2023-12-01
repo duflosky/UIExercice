@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
     sprite: {fileID: 1517081223, guid: e8bbd847859f1d14bb72c28ce42a0548, type: 3}
-    title: Nice
+    titleFrench: Gentil
+    titleEnglish: Nice
     name: Gobelin
-    text: "Tu es dr\xF4lement gentil ! Je suis ton alli\xE9 maintenant !"
+    textFrench: "Tu es dr\xF4lement gentil ! Je suis ton alli\xE9 maintenant !"
+    textEnglish: You are kind ! I'm your ally !
     choices: []

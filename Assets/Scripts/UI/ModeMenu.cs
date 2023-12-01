@@ -6,7 +6,7 @@ public class ModeMenu : MonoBehaviour
 {
     [SerializeField] private UIDocument modeUIDocument;
     [SerializeField] private MainMenu mainMenu;
-    
+
     private VisualElement rootElement;
 
     private void OnEnable()
@@ -15,9 +15,12 @@ public class ModeMenu : MonoBehaviour
         rootElement.Q<Button>("EndlessButton")
             .RegisterCallback<ClickEvent, string>(OnEndlessButtonClicked, "EndlessMode");
         rootElement.Q<Button>("SoloButton").RegisterCallback<ClickEvent, string>(OnSoloButtonClicked, "SoloMode");
-        rootElement.Q<Button>("MultiplayerButton").RegisterCallback<ClickEvent, string>(OnMultiplayerButtonClicked, "MultiplayerMode");
+        rootElement.Q<Button>("MultiplayerButton")
+            .RegisterCallback<ClickEvent, string>(OnMultiplayerButtonClicked, "MultiplayerMode");
         rootElement.Q<Button>("BackButton").RegisterCallback<ClickEvent, string>(OnBackButtonClicked, "CloseMode");
     }
+
+    #region Event Callbacks
 
     private void OnEndlessButtonClicked(ClickEvent evt, string userargs)
     {
@@ -39,4 +42,6 @@ public class ModeMenu : MonoBehaviour
         gameObject.SetActive(false);
         mainMenu.gameObject.SetActive(true);
     }
+
+    #endregion
 }
